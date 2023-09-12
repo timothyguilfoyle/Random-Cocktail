@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cocktail Public API</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Its Five O'Clock Somewhere</h1>
+      <form action="/submit" method="get">
+        <button class="random" type="submit">Random</button>
+      </form>
+
+      <div><h2><%= drinkName %></h2></div>
+      <div class="drinkImage">
+        <img src="<%= drinkImage %>" alt="Drink of Choice" />
+      </div>
+
+      <div class="category"><h2><%= drinkCategory %></h2></div>
+
+      <div class="ingredients">
+        <h2>Ingredients</h2>
+        <ul>
+          <% for (i = 0; i <=15; i++){ %> <% if(drinkIngredients[i] != null){ %>
+          <li><%= drinkMeasure[i] %><%= drinkIngredients[i] %> <% } %></li>
+          <% } %>
+        </ul>
+      </div>
+
+      <div class="drinkInstructions">
+        <h2>Instructions</h2>
+        <%= drinkInstructions %>
+      </div>
+    </div>
+  </body>
+</html>

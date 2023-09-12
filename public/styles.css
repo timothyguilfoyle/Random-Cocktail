@@ -1,0 +1,26 @@
+
+
+body {
+    background-color: grey
+    
+    
+    
+}
+
+.buttonType{
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+}
+
+
+.container {
+    margin-left: 30%;
+    
+}
+
+.random{
+   size: 50%;
+}
+
+
